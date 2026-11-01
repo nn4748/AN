@@ -81,6 +81,8 @@
       cache: 'no-store',
       credentials: 'omit',
     });
+    const renewed = res.headers.get('X-Session-Token');
+    if (renewed && token) token = renewed;
     let data = null;
     try { data = await res.json(); } catch (_) { /* ignore */ }
     if (res.status === 401 && token) {

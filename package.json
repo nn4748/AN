@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "private": true,
   "description": "A private journal for Nourah and Aziz.",
-  "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "hash": "node scripts/hash-passcode.js",
-    "test": "node scripts/smoke-test.js"
+    "dev": "node scripts/dev.mjs",
+    "hash": "node scripts/hash-passcode.cjs",
+    "test": "node scripts/smoke-test.mjs"
   },
   "engines": {
-    "node": ">=18"
-  }
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^11.1.7"
+  },
+  "type": "module"
 }
