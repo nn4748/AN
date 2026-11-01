@@ -1,0 +1,15 @@
+{
+  "name": "nourah-aziz",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A private journal for Nourah and Aziz.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "hash": "node scripts/hash-passcode.js",
+    "test": "node scripts/smoke-test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
